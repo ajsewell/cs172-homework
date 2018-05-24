@@ -3,6 +3,14 @@
 // Date: 5/19/18
 // Class: CS 172
 
+//EX01_01: g) all of the above
+//EX01_01: 18/20
+//EX01_02: 20/20
+//EX01_03: 20/20
+//EX01_04: 19/20
+//EX01_05: 20/20
+//TOTAL: 97/100
+
 #include <iostream>
 #include <ctime>
 #include <cmath>
@@ -143,6 +151,8 @@ void ex04()
   cout << endl;
 
   //displays even integers from 0 to 40
+  //PT -- or m+=2
+  //for (int m=0; m<=40; m+=2)
   for (int m = 0; m <= 40; m++)
   {
     if (m % 2 == 0)
@@ -158,6 +168,8 @@ void ex04()
   int num2 = rand();
   add(num1, num2);
 
+  //PT -- call plusOne
+  // -1
 }
 
 //prints an array
