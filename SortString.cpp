@@ -3,6 +3,8 @@
 // Date: 5/23/18
 // Class: CS 172
 
+//PT -- nice work. 20/20
+
 #include <iostream>
 #include <string>
 using namespace std;
