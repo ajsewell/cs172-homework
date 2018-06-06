@@ -3,6 +3,8 @@
 // Date: 5/22/18
 // Class: CS 172
 
+//PT -- nice work. 20/20
+
 #include "Fan.h"
 
 Fan::Fan()
