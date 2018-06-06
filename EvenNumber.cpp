@@ -16,6 +16,7 @@ EvenNumber::EvenNumber(int newValue)
 {
   if (value % 2 == 0)
     value = newValue;
+  //PT -- else ?
 }
 
 //accessor function for value
