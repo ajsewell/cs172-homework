@@ -3,6 +3,8 @@
 // Date: 5/23/18
 // Class: CS 172
 
+//PT -- well done. 20/20
+
 #include "MyInteger.h"
 #include <string>
 #include <iostream>
