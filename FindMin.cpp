@@ -6,6 +6,8 @@
 #include <iostream>
 using namespace std;
 
+//PT -- nice work. 20/20
+
 //goes through all elements in array and updates min if an element
 //is smaller than the current min
 int findMin(int* list, int size)
