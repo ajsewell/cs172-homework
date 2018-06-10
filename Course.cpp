@@ -7,6 +7,8 @@
 #include "Course.h"
 using namespace std;
 
+// 14/20
+
 // constructs Course object
 Course::Course(const string& courseName, int capacity)
 {
@@ -29,6 +31,14 @@ Course::Course(const Course& course)
   numberOfStudents = course.numberOfStudents;
   capacity = course.capacity;
   students = new string[capacity];
+  
+  //PT -- copy the students over
+  // -2
+  /*
+  for (int i=0; i<numberOfStudents; i++) {
+    students[i] = course.students[i];
+  }
+  */
 }
 
 //accessor function for courseName
@@ -47,6 +57,12 @@ void Course::addStudent(const string& name)
     //adds values from the old array to the new array
   for (int i = 0; i < capacity; i++)
     newStudents[i] = students[i];
+  //PT -- almost. delete students, then assign students to newStudents
+  // -2
+  /*
+  delete[] students;
+  students = newStudents;
+  */
   students = newStudents;
   delete [] newStudents;
   }
@@ -60,6 +76,18 @@ void Course::dropStudent(const string& name)
 {
   string* p = find(students, students + numberOfStudents, name);
   string* oldStudents = students;
+  //PT -- this is ok, but better to just keep the old array and slide the students after 
+  //      the student to delete back one slot
+  /*
+  int i=0;
+  while (i < numberOfStudents && students[i] != name)
+    i++;
+    
+  for (; i<numberOfStudents-1; i++) {
+    students[i] = students[i+1];
+  }
+  */
+  
   string* newStudents = new string[capacity];
   numberOfStudents--;
   for (int i = 0; i < numberOfStudents; i++)
@@ -79,6 +107,11 @@ void Course::clear()
 {
   for (int i = 0; i < numberOfStudents; i++)
     students[i].clear();
+  //PT -- Removing all students means that there are no more students
+  // -2
+  /*
+  numberOfStudents = 0;
+  */
 }
 
 //accessor function for students
