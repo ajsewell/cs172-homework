@@ -5,6 +5,8 @@
 
 #include "Rectangle2D.h"
 
+//PT -- again, nice work. 20/20
+
 //constructs default rectangle. (x, y) is the rectangle's center
 Rectangle2D::Rectangle2D()
 {
