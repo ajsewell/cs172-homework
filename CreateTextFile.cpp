@@ -17,6 +17,13 @@ int main()
   //creates the file or appends it if it already exists
 
   stream.open("Exercise13_1.txt", ios::out | ios::app);
+  if (stream.fail())
+  {
+    cout << "Could not open file" << endl;
+    return 0;
+    }
+    
+  
  
    srand(time(0));
   const int NUMBER_INTEGERS = 100;
