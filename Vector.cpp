@@ -3,6 +3,8 @@
 // Date: 5/29/18
 // Class: CS 172
 
+//PT -- good. 20/20
+
 #include "Vector.h"
 
 //no arg constructor
