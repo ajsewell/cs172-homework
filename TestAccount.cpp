@@ -3,6 +3,8 @@
 // Date: 6/1/18
 // Class: CS 172
 
+//PT -- good. 20/20
+
 #include <iostream>
 #include <string>
 #include <vector>
