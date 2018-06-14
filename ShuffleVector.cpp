@@ -9,12 +9,15 @@
 #include <ctime>
 using namespace std;
 
+// 20/20
+
 template<typename T>
 void shuffle(vector<T>& v)
 // shuffles a vector by generating a random index and switching
 //the value at that index with the value at the current index
 
 {
+  //PT -- better to just call srand once, in main()
   srand(time(0));
 
   for (int i = 0; i < v.size(); i++)
