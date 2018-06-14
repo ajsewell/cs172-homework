@@ -21,7 +21,7 @@ int main()
   {
     cout << "Could not open file" << endl;
     return 0;
-    }
+  }
     
   
  
