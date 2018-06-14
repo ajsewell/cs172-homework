@@ -139,8 +139,6 @@ int main()
     getInput(SIZE, ranks, boyNames, girlNames, year, gender, name, input);
   }
 
-  int number;
-  cin >> number;
 
   return 0;
 }
