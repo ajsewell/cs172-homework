@@ -3,6 +3,8 @@
 // Date: 5/29/18
 // Class: CS 172
 
+// 20/20
+
 #include <iostream>
 using namespace std;
 
@@ -11,6 +13,9 @@ template<typename T>
 //has the highest index and so on
 bool isSorted(const T list[], int size)
 {
+  
+  //PT -- you don't need a nested loop here. You can just check that list[j] > list[j-1].
+  
   for (int j = size; j >= 0; j--)
     for (int i = 0; i < j; i++)
     {
