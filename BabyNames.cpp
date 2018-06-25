@@ -53,6 +53,7 @@ string girlNames[], int year, char gender, string name, ifstream& input)
 
 int main()
 {
+	//PT -- This would've been cleaner with vectors, since then you could go with files with more than 1000 names.
   string ranks[SIZE];
   string boyNames[SIZE];
   string girlNames[SIZE];
